@@ -1,0 +1,3 @@
+log 1 and 2 : 90 deg
+log 3 and 4 : 60 deg
+log 5 and 6 : 30 deg
