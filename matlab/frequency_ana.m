@@ -1,6 +1,6 @@
 clear all
 
-data = readtable('..\code_ultrason_ME301\arduino_log_8.csv');
+data = readtable('../code_ultrason_ME301/arduino_log_8.csv');
 
 times = data.Times * 10^(-3);  % Convert times to seconds (assuming they are in ms)
 measures = data.Measures;
