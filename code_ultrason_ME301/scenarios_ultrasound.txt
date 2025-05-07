@@ -4,3 +4,11 @@ log 10 and 11 : 90 deg
 
 log 13 : hardware test
 log 17 and 18: 30 deg
+
+With correct sampling:
+
+log 21 and 22: 30 deg
+
+log 23 and 24: 60 deg
+
+log 25 and 26: 90 deg

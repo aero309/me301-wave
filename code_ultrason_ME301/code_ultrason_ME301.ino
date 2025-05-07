@@ -35,6 +35,7 @@ void loop() {
     Serial.print(millis());
     Serial.print(",");
     Serial.println(distance_cm, 2);
+    delay(38);
   }
 }
 
