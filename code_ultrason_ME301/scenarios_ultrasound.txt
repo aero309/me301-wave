@@ -1,3 +1,6 @@
 log 6 and 7 : 30 deg
 log 8 and 9 : 60 deg
 log 10 and 11 : 90 deg
+
+log 13 : hardware test
+log 17 and 18: 30 deg

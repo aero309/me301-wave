@@ -15,16 +15,16 @@ void setup() {
 
 void loop() {
   // Lecture des commandes série
-  if (Serial.available()) {
-    String command = Serial.readStringUntil('\n');
-    command.trim();
-    if (command == "START") {
-      running = true;
-      startTime = millis(); // temps de départ
-    } else if (command == "STOP") {
-      running = false;
-    }
-  }
+  // if (Serial.available()) {
+  //   String command = Serial.readStringUntil('\n');
+  //   command.trim();
+  //   if (command == "START") {
+  //     running = true;
+  //     startTime = millis(); // temps de départ
+  //   } else if (command == "STOP") {
+  //     running = false;
+  //   }
+  // }
 
   // Si mesure activée et délai écoulé
   if (1) {
@@ -32,7 +32,7 @@ void loop() {
     float distance_cm = mesurerHauteur();
 
     // Envoi formaté : hauteur ; temps depuis START
-    Serial.print(millis() - startTime);
+    Serial.print(millis());
     Serial.print(",");
     Serial.println(distance_cm, 2);
   }
