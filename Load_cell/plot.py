@@ -13,7 +13,7 @@ def main(filename):
             return
 
         # Keep only rows where 10 <= Measures <= 20
-        filtered_data = data[(data['Measures'] >= 10) & (data['Measures'] <= 17)]
+        filtered_data = data[(data['Measures'] >= -3000) & (data['Measures'] <= 3000)]
 
         # Extract filtered data
         time = filtered_data['Times']

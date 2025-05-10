@@ -1,6 +1,7 @@
 clear all
+close all
 
-data = readtable('../code_ultrason_ME301/arduino_log_8.csv');
+data = readtable('../code_ultrason_ME301/arduino_log_25.csv');
 
 times = data.Times * 10^(-3);  % Convert times to seconds (assuming they are in ms)
 measures = data.Measures;
@@ -65,3 +66,4 @@ plot(t, measures_filtered);
 title('Filtered Signal');
 xlabel('Time (s)');
 ylabel('Magnitude');
+grid on;
